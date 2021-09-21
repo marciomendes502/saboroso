@@ -69,7 +69,7 @@ app.set('view engine', 'ejs');
 
 app.use(
   session({
-    store: new RedisStore({ host:'174.129.91.115', port:6379 }),
+    store: new RedisStore({ host:'localhost', port:6379 }),
     secret:'p@ssw0rd',
     resave: true ,
     saveUninitialized:true
